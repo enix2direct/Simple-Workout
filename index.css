@@ -6,10 +6,10 @@ html, body {
 
 .grid {
     display: grid;
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: rgba(127, 65, 0, 0.5);
     gap: 0;
     padding: 0;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 1fr repeat(4, 2fr) repeat(2, 1fr) repeat(4, 2fr) 1fr;
     grid-template-rows: repeat(23, 1fr);
     height: 100%;
     width: 100%;
@@ -18,64 +18,101 @@ html, body {
 .item1 {
     grid-area: 2/2/6/12;
     background-color: rgba(0,255,0,.5);
+    font-size: 500%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item2 {
     grid-area: 7/2/9/12;
     background-color: rgba(0,255,255,.3);
-}
-
-.item3 {
-    grid-area: 10/2/12/6;
-    background-color: rgba(0,255,127,.4);
+    font-size: 300%;
 }
 
 .item3-1 {
+    grid-area: 10/2/12/6;
+    background-color: rgba(0,255,127,.4);
+    font-size: 250%;
+}
+
+.item3-2 {
     grid-area: 10/8/12/12;
     background-color: rgba(0,255,127,.4);
+    font-size: 250%;
 }
 
 .item4-1 {
     grid-area: 13/2/17/3;
     background-color: rgba(127,255,0,.5);
+    font-size: 100%;
+}
+
+.vertical {
+    width: 50px;
 }
 
 .item4-2 {
     grid-area: 13/4/17/10;
     background-color: rgba(127,255,0,.5);
+    font-size: 300%;
 }
 
 .item4-3 {
     grid-area: 13/11/17/12;
     background-color: rgba(127,255,0,.5);
+    font-size: 100%;
 }
 
 .item5-1 {
     grid-area: 18/2/20/4;
     background-color: rgba(127,127,0,.7);
+    font-size: 100%;
 }
 
 .item5-2 {
     grid-area: 18/5/20/9;
     background-color: rgba(127,127,0,.7);
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item5-3 {
     grid-area: 18/10/20/12;
     background-color: rgba(127,127,0,.7);
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item5-4 {
     grid-area: 21/2/23/4;
     background-color: rgba(127,127,0,.7);
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item5-5 {
     grid-area: 21/5/23/9;
     background-color: rgba(127,127,0,.7);
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item5-6 {
     grid-area: 21/10/23/12;
     background-color: rgba(127,127,0,.7);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
