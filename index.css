@@ -28,40 +28,46 @@ html, body {
     grid-area: 7/2/9/12;
     background-color: rgba(0,255,255,.3);
     font-size: 300%;
+    align-items: center;
 }
 
 .item3-1 {
     grid-area: 10/2/12/6;
     background-color: rgba(0,255,127,.4);
     font-size: 250%;
+    align-items: center;
 }
 
 .item3-2 {
     grid-area: 10/8/12/12;
     background-color: rgba(0,255,127,.4);
     font-size: 250%;
+    align-items: center;
 }
 
 .item4-1 {
     grid-area: 13/2/17/3;
     background-color: rgba(127,255,0,.5);
     font-size: 100%;
+    align-items: center;
 }
 
 .vertical {
-    width: 50px;
+    width: 75px;
 }
 
 .item4-2 {
     grid-area: 13/4/17/10;
     background-color: rgba(127,255,0,.5);
     font-size: 300%;
+    align-items: center;
 }
 
 .item4-3 {
     grid-area: 13/11/17/12;
     background-color: rgba(127,255,0,.5);
     font-size: 100%;
+    align-items: center;
 }
 
 .item5-1 {
@@ -74,45 +80,45 @@ html, body {
     grid-area: 18/5/20/9;
     background-color: rgba(127,127,0,.7);
     font-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .item5-3 {
     grid-area: 18/10/20/12;
     background-color: rgba(127,127,0,.7);
     font-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .item5-4 {
     grid-area: 21/2/23/4;
     background-color: rgba(127,127,0,.7);
     font-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .item5-5 {
     grid-area: 21/5/23/9;
     background-color: rgba(127,127,0,.7);
     font-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .item5-6 {
     grid-area: 21/10/23/12;
     background-color: rgba(127,127,0,.7);
+    font-size: 100%;
 }
 
 .flex {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.triangle-up{
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    background-color: white;
+    align-items: end;
+}
+
+.triangle-down{
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    background-color: white;
+    align-items: start;
 }
