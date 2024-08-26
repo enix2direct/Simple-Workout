@@ -6,8 +6,7 @@ html, body {
 }
 
 .container-1 {
-    display: grid;
-    
+    display: grid;    
     gap: 0;
     padding: 0;
     grid-template-columns: 20px 1fr 20px;
@@ -149,4 +148,29 @@ html, body {
     background-color: white;
     align-items: start;
     padding: 2px;
+}
+
+.container-4 {
+    display: grid;
+    background-color: blueviolet;   
+    gap: 0;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: 10%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1200px;
+}
+
+.container-5 {
+    display: grid;    
+    gap: 0;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    height: 10%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1200px;
 }
