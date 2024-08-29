@@ -14,10 +14,16 @@
         <input type="text" id="workout-name" name="workout-name"
         placeholder="Workout Name Here" minlength="4" maxlength="20" size="30"/>
     </div>
-    <div class="container-5">
-        <label for="exercise-name">Exercise Name</label>
-        <input type="text" id="exercise-name" name="exercise-name"
-        placeholder="Exercise Name Here" minlength="4" maxlength="20" size="30"/>
+    <div class="row" id="inRows">
+        <div class="column">
+            <input class="input-text" type="text" name="exercise-name[]" placeholder=" Exercise Name">
+            <input class="input-number" type="text" name="weight[]" placeholder="Weight">
+            <input class="input-number" type="text" name="#-of-sets[]" placeholder="# of Sets">
+            <button class="del-btn" onclick="removeRow(this.parentNode)">-</button>
+        </div>
     </div>
+    <button class="add-btn" onclick="addRow(); return false">Add Exercise</button>
+
+    <script src="index.js"></script>
 </body>
 </html>

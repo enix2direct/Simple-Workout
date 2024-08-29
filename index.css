@@ -152,7 +152,7 @@ html, body {
 
 .container-4 {
     display: grid;
-    background-color: blueviolet;   
+    background-color: blueviolet;
     gap: 0;
     padding: 10px;
     grid-template-columns: 1fr;
@@ -165,12 +165,98 @@ html, body {
 
 .container-5 {
     display: grid;    
+    background-color: greenyellow;
+    border: 3px;
     gap: 0;
-    padding: 20px;
+    padding: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
     height: 10%;
     width: 100%;
     min-width: 320px;
     max-width: 1200px;
+}
+
+.input-text, .input-number{
+    /* Padding for Y-axis (top and bottom) and X-axis (left and right) */
+    padding: 10px 14px;
+    font-size: 14px;
+    width: 40%;
+    border: 1px solid #e5e5e5; /* Neutral gray border */
+    border-radius: 10px; /* Rounded corners */
+    color: #333; /* Text color */
+}
+
+.input-number{
+    width: 20%;
+}
+
+.input-text::placeholder {
+    color: #9ca3af; /* Placeholder neutral gray */
+}
+
+.input-text:hover {
+    /* Background color change on hover */
+    background-color: #f9fafb; /* Light gray background on hover */
+}
+
+.input-text:focus {
+    outline: none;
+    border-color: #4b5563; /* Darker gray border when focused */
+}
+
+.btn {
+    background-color: #f56565; /* Red-500 in Tailwind */
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px; /* Equivalent to py-2 and px-4 in Tailwind */
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c53030; /* Background color change on hover */
+}
+
+.del-btn {
+    background-color: #f56565;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 8px;  /* Rounded corners */
+    border: none;
+    cursor: pointer; /* Cursor style */
+}
+
+.del-btn:hover {
+    background-color: #c53030; /* Background color change on hover */
+}
+
+.btn {
+    background-color: #48bb78; /* Background color */
+    color: white; /* Text color */
+    font-weight: bold; /* Font weight */
+    padding: 8px 16px; /* Padding for Y-axis and X-axis */
+    border-radius: 9999px; /* Fully rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.btn:hover {
+    background-color: #2f855a; /* Background color change on hover */
+}
+
+.add-btn {
+    background-color: #48bb78; /* Background color */
+    color: white; /* Text color */
+    font-weight: bold; /* Font weight */
+    padding: 8px 16px; /* Padding */
+    border-radius: 9999px; /* Fully rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.add-btn:hover {
+    background-color: #2f855a; /* Background color change on hover */
 }
